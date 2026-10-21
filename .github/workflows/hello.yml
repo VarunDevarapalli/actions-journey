@@ -1,0 +1,9 @@
+name: MY FIRST FLOW
+on: push 
+jobs: 
+  work1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my first flow
+        run: echo "greetings"
+
