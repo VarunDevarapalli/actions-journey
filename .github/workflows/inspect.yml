@@ -1,0 +1,14 @@
+name: runner-inspecter
+on: push
+jobs:
+  runner-inspector:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+      - name: kernal
+        run: | 
+          uname -a
+          ls -ls
+      - name: list files
+        run: git ls-files
