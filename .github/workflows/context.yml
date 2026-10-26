@@ -10,5 +10,5 @@ jobs:
            echo "branch name is: ${{github.ref_name}}"
            echo "commit id is: ${{github.sha}}"
            echo "event name is: ${{github.event_name}}"
-           echo "the runner OS is: ${{runner.os}}
+           echo "the runner OS is: ${{runner.os}}"
 
