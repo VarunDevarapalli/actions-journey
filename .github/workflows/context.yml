@@ -1,0 +1,14 @@
+name: contect-File
+on: push
+jobs:
+  context-jobs:
+    runs-on: ubuntu-latest
+    steps:
+      -  name: expression
+         run: |
+           echo "repositoty: ${{github.repository}}"
+           echo "branch name is: ${{github.ref_name}}"
+           echo "commit id is: ${{github.sha}}"
+           echo "event name is: ${{github.event_name}}"
+           echo "the runner OS is: ${{runner.os}}
+
